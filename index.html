@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apresentação - Cambridge Analytica</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: black;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    /* Fundo animado padrão */
+    body {
+      background-image: url('imagem.png');
+      background-repeat: repeat-y;
+      background-size: cover;
+      animation: rolar 15s linear infinite;
+    }
+
+    @keyframes rolar {
+      from { background-position: 0 0; }
+      to { background-position: 0 190%; }
+    }
+
+    /* Estilo base dos slides */
+    .slide {
+      display: none;
+      position: absolute;
+      inset: 0;
+      padding: 60px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      display: block;
+      opacity: 1;
+    }
+
+    h1, h2 {
+      color: #00bfff;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      max-width: 100%;
+      margin: 10px auto;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li::before {
+      content: "• ";
+      color: #ff4444;
+    }
+
+    /* Botões de navegação */
+    .nav-buttons {
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0px;
+    }
+
+    button {
+      background: rgba(255,255,255,0.1);
+      color: white;
+      border: 1px solid #00bfff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00bfff;
+      color: black;
+    }
+
+    img.logo {
+      width: 120px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      opacity: 0.9;
+    }
+
+    img.illustration {
+      width: 40%;
+      
+      border-radius: 12px;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    }
+
+    h3 {
+      color: #00bfff;
+      font-size: 0.8em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- SLIDE 1 -->
+  <div class="slide active">
+    <img src="logo_udf.png" class="logo" alt="Logo UDF">
+    <h1>O Princípio Violado</h1>
+    <h2>Case: Cambridge Analytica – O Uso Antiético de Dados de Usuários</h2>
+    <p><strong>Apresentador:</strong> Flávio Campos<br>
+       <strong>Pesquisadora:</strong> Joana D’Arc<br>
+       <strong>Facilitador:</strong> Lorruan Pereira<br>
+       <strong>Relatora:</strong> Lara Nicole</p>
+    <img class="illustration" src="olho_digital.png" alt="foto capa">
+    <h3>Figura 1 — Olho representando vigilância digital e privacidade. - Fonte: criação do chatgpt.</h3>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide">
+    <h2>Contexto do Caso</h2>
+    <p>A Cambridge Analytica coletou e analisou dados de usuários do Facebook sem consentimento explícito para fins de segmentação política.</p>
+    <p>Usando um aplicativo de quiz, dados de amigos foram combinados com modelos comportamentais para influenciar eleitores.</p>
+    <img class="illustration" src="diagrama.png" alt="Cambridge Analytica Logo">
+  <h3>Figura 2 — Diagrama simplificado do fluxo de coleta e uso dos dados fonte: https://minutodaseguranca.blog.br/entenda-o-escandalo-de-vazamento-de-dados-do-facebook/
+Fonte: .</h3>
+    
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div class="slide">
+    <h2>Fundamentos Éticos Envolvidos</h2>
+    <img class="illustration" src="informacao_pessoas.webp" alt="Cambridge Analytica Logo">
+    <h3>figura 3 - fonte:https://about.fb.com/br/news/2018/04/uma-atualizacao-nos-nossos-planos-para-restringir-acesso-aos-dados-no-facebook/</h3>
+
+    <ul>
+      <li>Honestidade e Transparência: esclarecer objetivos da coleta e uso de dados.</li>
+      <li>Responsabilidade Profissional: seguir normas e proteger usuários.</li>
+      <li>Respeito à Privacidade e Autonomia: garantir consentimento e controle.</li>
+      <li>Uso Ético da IA: evitar manipulação e vieses em modelos.</li>
+    </ul>
+    
+    <p>Os termos e conceitos listados referem-se a princípios fundamentais da ética em dados e inteligência artificial. 
+Eles delineiam um arcabouço moral e profissional para o desenvolvimento e aplicação de tecnologias digitais, com o objetivo de proteger os direitos e o bem-estar dos indivíduos na era digital. Esses princípios são essenciais para construir confiança pública e garantir que a tecnologia seja usada para o bem comum.  </p>
+  </div>
+    
+
+  <!-- SLIDE 4 -->
+  <div class="slide">
+    <h2>Violação Ética e Legal</h2>
+    <ul>
+      <li>Coleta de dados sem consentimento informado.</li>
+      <li>Uso de dados de amigos via permissões excessivas.</li>
+      <li>Segmentação psicológica e política personalizada.</li>
+      <li>Violação de legislações de proteção de dados.</li>
+    </ul>
+    <img class="illustration" src="Christopher_Wylie.jpg" alt="Cambridge Analytica Logo">
+    <h3> figura 4 - fonte: New York times, christopher wylie e brittany kaiser principais delatores do esquema</h3>
+
+  </div>
+
+  <!-- SLIDE 5 -->
+  <div class="slide">
+    <h2>Análise Ética</h2>
+     <p>O episódio apresenta violações éticas graves que comprometem confiança, autonomia e integridade democrática.</p>
+
+        <section>
+        <ul>
+          <li><strong>Manipulação e falta de transparência:</strong> dados foram usados para criar perfis psicológicos e direcionar propaganda política personalizada, explorando emoções e influenciando eleitores.</li>
+          <li><strong>Violação da confiança:</strong> coleta de dados de usuários e suas redes sem consentimento adequado, quebrando a confiança entre plataforma e pessoas.</li>
+          <li><strong>Desrespeito à autodeterminação informativa:</strong> indivíduos não foram informados sobre a finalidade real da coleta nem puderam consentir ou recusar.</li>
+        </ul>
+        <p>Em resumo: práticas que ferem princípios da <strong>LGPD</strong> e da <strong>GDPR</strong>, erosionando confiança digital e potencialmente prejudicando a democracia.</p>
+        </section>
+
+    <h2>Análise Legal</h2>
+
+     <p>Do ponto de vista jurídico, o caso evidenciou a necessidade de regulamentação e responsabilização:</p>
+        <section>
+        <ul>
+          <li><strong>Coleta e uso indevido de dados:</strong> uso posterior para fins políticos e comerciais sem consentimento explícito foi ilegal.</li>
+          <li><strong>Responsabilização das empresas:</strong> plataformas e terceiros são responsáveis pelo tratamento e devem cumprir princípios de finalidade, transparência e segurança.</li>
+          <li><strong>Consequências legais:</strong> processos e sanções contra atores envolvidos; Cambridge Analytica admitiu culpa e houve ações regulatórias relevantes.</li>
+          <li><strong>Impacto regulatório global:</strong> acelerou criação/fortalecimento de leis como a GDPR (UE) e LGPD (BR), exigindo consentimento e proteção de dados.</li>
+        </ul>
+      </section>
+  </div>
+
+  <!-- SLIDE 6 -->
+  <div class="slide">
+    <h2>Consequências e Impactos</h2>
+    <ul>
+      <li>Multas e processos contra as empresas envolvidas.</li>
+      <li>Perda de confiança dos usuários e do mercado.</li>
+      <li>Avanço das legislações de proteção de dados (GDPR, LGPD).</li>
+      <li>Discussão sobre governança e auditoria de algoritmos.</li>
+    </ul>
+    <img class="illustration" src="facebook_queda_bolsa.webp" alt="Impactos Éticos">
+    <h3>Figura 6 — Repercussão do escândalo e impacto corporativo.
+Fonte: .</h3>
+  </div>
+
+  <!-- SLIDE 7 -->
+  <div class="slide">
+    <h2>Parecer Final do Grupo</h2>
+    <ul>
+      <li>Adotar políticas éticas e transparentes sobre uso de dados.</li>
+      <li>Restringir o tratamento ao estritamente necessário.</li>
+      <li>Implementar auditorias externas e canais de denúncia.</li>
+      <li>Capacitar profissionais em ética digital e cidadania.</li>
+    </ul>
+    <img class="illustration" src="parecer_final.jpg" alt="Equipe Ética">
+    <h3>figura 7 - https://tiinside.com.br/16/10/2024/mais-da-metade-das-empresas-adotam-ferramentas-de-ia-para-compliancef-diz-ey/</h3>
+  </div>
+
+  <!-- SLIDE 8 -->
+  <div class="slide">
+    <h2>Conclusão</h2>
+    <p>O caso Cambridge Analytica demonstra que tecnologias avançadas exigem governança e responsabilidade. ESG</p>
+    <p>Profissionais e empresas devem integrar princípios éticos em todas as etapas do ciclo de dados para fortalecer a democracia.</p>
+    <img class="illustration" src="ESG.png" alt="Conclusão Ética">
+    <h3>Figura 8 — Práticas de ética, governança e responsabilidade.
+Fonte: arquivo 'principio_violado/ESG.png'.</h3>
+  </div>
+
+  <!-- SLIDE 9 -->
+  <div class="slide">
+    <img src="logo_udf.png" class="logo" alt="Logo UDF">
+    <h2>Referências (ABNT)</h2>
+    <P>privacidade hackeada, documentario na netflix: Entenda como a empresa de análise de dados Cambridge Analytica se tornou o símbolo do lado sombrio das redes sociais após a eleição presidencial de 2016 nos EUA.  </P>
+    <p>BBC NEWS. Cambridge Analytica: entenda o escândalo de dados do Facebook. 2018. Disponível em: https://www.bbc.com/portuguese/internacional-43465847. Acesso em: 28 out. 2025.<br>
+    G1. O escândalo Cambridge Analytica. Infográfico. 2018. Disponível em: https://g1.globo.com/economia/tecnologia/noticia/o-escandalo-cambridge-analytica.ghtml. Acesso em: 28 out. 2025..<br>
+    FACEBOOK. Dados institucionais e logo. 2018.<br>
+    UDF – Centro Universitário. Identidade visual institucional.</p>
+    <p>https://www.nytimes.com/2019/10/09/books/review-christopher-wylie-targeted-brittany-kaiser-cambridge-analytica.html<br>https://tiinside.com.br/16/10/2024/mais-da-metade-das-empresas-adotam-ferramentas-de-ia-para-compliancef-diz-ey/<br> https://minutodaseguranca.blog.br/entenda-o-escandalo-de-vazamento-de-dados-do-facebook/<br>https://about.fb.com/br/news/2018/04/uma-atualizacao-nos-nossos-planos-para-restringir-acesso-aos-dados-no-facebook/</p>
+  </div>
+
+  <!-- Navegação -->
+  <div class="nav-buttons">
+    <button id="prev">◀ Voltar</button>
+    <button id="next">Próximo ▶</button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    });
+  </script>
+</body>
+</html>
